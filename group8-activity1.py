@@ -35,7 +35,7 @@ def hexagon(turta, hexagon_color, border_color): # function to draw hexagon shap
 
 def square(turta, square_color, border_color): # square function that draws a square shape and fills color
     turta.begin_fill()
-    turta.color(square_color, border_color)
+    turta.color(square_color, border_color) # this will change the color when user is asked 
     turta.forward(90)
     turta.right(90)
     turta.forward(90)
@@ -66,7 +66,7 @@ def main():
     square_color=input("Enter the color of the square: ")   # user chooses the color for square shape
     turta = turtle.Turtle() # initializing turtle
     screen = turtle.Screen() # turtle screen
-    turta.pensize(2) # size of the pen
+    turta.pensize(2) # this makes the size of the pen 2
     turta.pencolor(border_color) # here the color of the pen is the border color asked from the user
     screen.bgcolor("Light Blue") # background color of the screen as required 
     
@@ -77,3 +77,7 @@ def main():
     turtle.exitonclick() # exit on click when done.
 
 main() #calls the main function
+
+
+
+# end  of the program 
